@@ -1,0 +1,327 @@
+/*Fontes importadas*/
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Rubik&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&family=Rubik&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&family=Rubik&display=swap');
+/* ===================================================== */
+/*Corpo do site*/
+body, html{
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    background-color: #c4e5ee;
+  }
+  .container-modal{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    top:4%;
+  }
+  .modal{
+    width: 70%;
+    height: auto;
+    background-color:#fff;
+    -webkit-border-radius: 40px 40px 70px 70px;
+    border-radius: 40px 40px 70px 70px;
+  }
+/* ===================================================== */
+
+/* configurando scroll */
+::-webkit-scrollbar { 
+    width:10px; 
+    background:#ffd8da; 
+} 
+::-webkit-scrollbar-thumb {  
+    background:#ffb6b9;  
+}
+::-webkit-scrollbar-corner { 
+    background: #ffd8da;
+}
+/* ===================================================== */
+
+/*Cor da seleção de texto*/
+::selection { 
+    color: #fff;
+    background-color: #c6acc7;
+}
+/* ===================================================== */
+
+/* Menu */
+nav {
+    position: relative;
+    width: 100%;
+    height: 30px;
+    padding-top: 1%;
+    text-align: center;
+    font-family: 'Rubik', sans-serif;
+    -webkit-border-radius: 130px 130px 0 0;
+    border-radius: 130px 130px 0 0;
+    
+}
+#nav {
+    background: #c6acc7;
+}
+.linknav {
+    margin-left: 2%;
+    transition: 0.4s;
+    color: #ffffff;
+    font-size: 15px;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+.linknav:hover {
+    color: #594f59;
+}
+/* ===================================================== */
+/* Header */
+header{
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+header .texto{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 15px;
+    margin-right: 15px;
+    text-transform: uppercase;
+}
+h1{
+    font-family: 'Roboto Mono', monospace;
+    font-size: 40px;
+    color: #c4e5ee;
+    text-shadow: 0.05em 0.05em #8ac6d1;
+}
+.social, .texto {
+    display: inline-block;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+}
+.social{
+    width: 30px;
+    margin-left: 30px;
+}
+.social:hover{
+    opacity: 80%;
+}
+/* ===================================================== */
+/* Section */
+section{
+    margin-left: 10%;
+    margin-right: 10%;
+}
+section h3{
+    font-family: 'Rubik', sans-serif;
+    color: #c6acc7;
+    font-size: 25px;
+    text-transform: uppercase;
+    margin-top: 5px;
+    margin-bottom: 15px;
+}
+section .titulo, section .tempo{
+    font-family: 'Open Sans', sans-serif;
+    color:#5f949c;
+    text-transform: uppercase;
+    margin: 0;
+}
+section .local{
+    margin: 0;
+    text-transform: uppercase;
+    font-family: 'Open Sans', sans-serif;
+    color: #dd5877;
+    margin-left: 5px;
+}
+section .texto{
+    font-family: 'Montserrat', sans-serif;
+    margin-left: 10px;
+}
+/* ===================================================== */
+
+/*Portfolio*/
+.galeria{
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+}
+.galeria img{
+    width: 50%;
+}
+.portfolio img:hover{
+    opacity: 50%;
+    transition-duration: 1s;
+    cursor: crosshair;
+}
+hr{
+    margin-top: 10px;
+    margin-bottom: 10px;
+    height: 2px;
+    border: 0px;
+    -webkit-border-radius: 10px;
+    border-radius: 10px;
+    background-color: #f0f0f0;
+}
+/* ===================================================== */
+
+/* Footer */
+footer{
+    background: #c6acc7;
+    -webkit-border-radius:0 0  130px 130px;
+    border-radius:0 0  130px 130px;
+    font-family: monospace;
+    text-align: center;
+    font-size: 15px;
+    padding: 1%;
+    color: #fff;
+    margin-top: 2%;
+}
+footer a{
+    text-decoration:underline;
+    color: #fff1eb;
+}
+footer a:hover{
+    transition-duration: 1s;
+    text-decoration: none;
+    color:#463d3a;
+}
+/* ===================================================== */
+table.unstyledTable {
+    position: relative;
+    display: flex;
+    text-align: center;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+  }
+
+  table.unstyledTable td, table.unstyledTable th {
+    border-right: 15px solid #fff;
+  }
+meter {
+    
+    width: 150px;
+    display: block;
+    margin-bottom: 1em;
+
+  }
+   
+  /* The green (optimum) bar in Firefox */
+  meter:-moz-meter-optimum::-moz-meter-bar {
+    background: #ffacb7;
+  }
+  
+  /* The green (optimum) bar in Chrome etc. */
+  meter::-webkit-meter-optimum-value {
+    background: #ffacb7;
+  }
+  
+  /* The yellow (sub-optimum) bar in Firefox */
+  meter:-moz-meter-sub-optimum::-moz-meter-bar {
+    background: #ffacb7;
+  }
+  
+  /* The yellow (sub-optimum) bar in Chrome etc. */
+  meter::-webkit-meter-suboptimum-value {
+    background: #ffacb7;
+  }
+  
+  /* The red (even less good) bar in Firefox */
+  meter:-moz-meter-sub-sub-optimum::-moz-meter-bar {
+    background: #ffacb7;
+  }
+  
+  /* The red (even less good) bar in Chrome etc. */
+  meter::-webkit-meter-even-less-good-value {
+    background: #ffacb7;
+  }
+
+
+
+
+
+
+
+
+
+
+
+
+  button {
+    margin: 20px;
+    outline: none;
+  }
+  .custom-btn {
+    width: 130px;
+    height: 40px;
+    padding: 10px 25px;
+    border: 2px solid #ffb6b9;
+    font-family: 'Lato', sans-serif;
+    font-weight: 500;
+    background: transparent;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    position: relative;
+    display: inline-block;
+  }
+  
+/* 16 */
+.btn-16 {
+    background: #ffb6b9;
+    color: #fff;
+    z-index: 1;
+ }
+ .btn-16:after {
+   position: absolute;
+   content: "";
+   width: 0;
+   height: 100%;
+   top: 0;
+   left: 0;
+   direction: rtl;
+   z-index: -1;
+   background: #fae3d9;
+   transition: all 0.3s ease;
+ }
+ .btn-16:hover {
+   color: #907c74;
+ }
+ .btn-16:hover:after {
+   left: auto;
+   right: 0;
+   width: 100%;
+ }
+ .btn-16:active {
+   top: 2px;
+ }
+
+
+
+
+
+ .btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    bottom: 10px;
+    right: 10px;
+    width: 50px;
+    height: 50px;
+    background-color: #ffb6b9;
+    text-decoration: none;
+}
+.btn::after {
+    content: "↑";
+    font-size: 32px;
+    font-weight: bold;
+    color: #fff;
+    transition: margin-top 250ms;
+}
+.btn:hover::after {
+    margin-top:-8px;
+}
